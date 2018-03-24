@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  frontend:
+    build: .
+    restart: always
+    volumes:
+      - .:/app
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "999k"
+    ports:
+      - "3000:3000"
