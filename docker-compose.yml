@@ -15,7 +15,7 @@ services:
       - frontend
 
   nginx:
-    build: .
+    build: ./nginx
     restart: on-failure
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
@@ -23,12 +23,13 @@ services:
       driver: "json-file"
       options:
         max-size: "999k"
+    command: nginx -g 'daemon off;'
     ports:
       - "80:80"
       - "443:443"
-    command: nginx -g 'daemon off;'
     networks:
       - frontend
 
 networks:
   frontend:
+
