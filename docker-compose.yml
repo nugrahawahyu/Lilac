@@ -23,7 +23,7 @@ services:
       driver: "json-file"
       options:
         max-size: "999k"
-    command: nginx -g 'daemon off;'
+    command: wait-for-it -t 0 web-ui:3000 -- nginx -g 'daemon off;'
     ports:
       - "80:80"
       - "443:443"

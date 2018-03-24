@@ -9,4 +9,6 @@ RUN npm install --production --unsafe-perm || \
       cat npm-debug.log; \
     fi) && false)
 
+EXPOSE 3000
+
 CMD /usr/local/bin/npm start
