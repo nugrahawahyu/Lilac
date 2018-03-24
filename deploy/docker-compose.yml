@@ -3,7 +3,7 @@ version: '3'
 services:
 
   web-ui:
-    build: .
+    image: nugraha/myblog/web:latest
     restart: on-failure
     logging:
       driver: "json-file"
@@ -15,7 +15,7 @@ services:
       - frontend
 
   nginx:
-    build: ./nginx
+    image: nugraha/myblog/nginx:latest
     restart: on-failure
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d

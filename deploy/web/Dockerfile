@@ -1,6 +1,6 @@
 FROM node
 
-COPY . /app/
+COPY / /app/
 
 WORKDIR /app
 
