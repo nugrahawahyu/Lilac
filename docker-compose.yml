@@ -2,14 +2,33 @@ version: '3'
 
 services:
 
-  frontend:
+  web-ui:
     build: .
-    restart: always
-    volumes:
-      - .:/app
+    restart: on-failure
     logging:
       driver: "json-file"
       options:
         max-size: "999k"
     ports:
       - "3000:3000"
+    networks:
+      - frontend
+
+  nginx:
+    build: .
+    restart: on-failure
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "999k"
+    ports:
+      - "80:80"
+      - "443:443"
+    command: nginx -g 'daemon off;'
+    networks:
+      - frontend
+
+networks:
+  frontend:
