@@ -1,4 +1,5 @@
 import express from 'express'
+import morgan from 'morgan'
 import { Nuxt, Builder } from 'nuxt'
 
 import api from './api'
@@ -9,8 +10,11 @@ const port = process.env.PORT || 3000
 
 app.set('port', port)
 
+app.use(morgan('combined'))
+
 // Import API Routes
 app.use('/api', api)
+
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')
