@@ -22,4 +22,5 @@ deploy:
 	docker-compose -f deploy/docker-compose.yml up -d
 
 build:
+	npm run build
 	$(foreach var, $(SERVICES), docker build -t $(REGISTRY)/$(PROJECT)/$(var):$(VERSION) -f ./deploy/$(var)/Dockerfile .;)
