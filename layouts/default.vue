@@ -1,16 +1,19 @@
 <template>
   <div>
+    <v-header></v-header>
     <nuxt/>
-    <!-- <my-footer/> -->
+    <my-footer/>
   </div>
 </template>
 
 <script>
 import MyFooter from '~/components/Footer.vue'
+import VHeader from '~/components/Header'
 
 export default {
   components: {
-    MyFooter
+    MyFooter,
+    VHeader
   }
 }
 </script>

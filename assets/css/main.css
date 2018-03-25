@@ -26,3 +26,13 @@ a, a:hover, a:focus, a:visited
   max-width: 400px;
   max-height: 289px;
 }
+
+main {
+  margin-top: 64px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin-top: 56px;
+  }
+}
