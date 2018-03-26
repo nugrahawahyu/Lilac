@@ -5,7 +5,7 @@
         <parallax img-src="images/banner.jpg" style="position: relative;">
           <div style="position: absolute; background-color: rgba(255,255,255,0.5); top: 0; bottom: 0; left: 0; right: 0; z-index: 1;">
             <div class="header-content content content--narrow">
-              <h1><span style="font-weight: 800;">Wahyu</span> Nugraha</h1>
+              <h1 class="title"><span style="font-weight: 800;">Wahyu</span> Nugraha</h1>
               <p>Engineer, love arts and books, learning to give back to community.</p>
             </div>
           </div>
@@ -67,8 +67,8 @@ h1 {
 
 .title
 {
-  margin: 30px 0;
-  color: #292F33;
+  color: #fff;
+  font-family: "Escrow Condensed", georgia, times, "\30E1\30A4\30EA\30AA", "Meiryo", "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "Hiragino Kaku Gothic Pro", "\FF2D\FF33\FF30\30B4\30B7\30C3\30AF", "MS PGothic", serif;
 }
 .users
 {
