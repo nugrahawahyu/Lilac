@@ -5,8 +5,8 @@
         <parallax img-src="images/banner.jpg" style="position: relative;">
           <div style="position: absolute; background-color: rgba(255,255,255,0.5); top: 0; bottom: 0; left: 0; right: 0; z-index: 1;">
             <div class="header-content content content--narrow">
-              <h1><span style="font-weight: 1000;">Wahyu</span> Nugraha</h1>
-              <p>Engineer / Technology Enthusiast</p>
+              <h1><span style="font-weight: 800;">Wahyu</span> Nugraha</h1>
+              <p>Engineer, love arts and books, learning to give back to community.</p>
             </div>
           </div>
         </parallax>
