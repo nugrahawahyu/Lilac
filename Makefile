@@ -16,7 +16,13 @@ DEPLOY_TAG = deploy-$(ENV)-$(DATE)
 $(ODIR):
 	mkdir -p $(ODIR)
 
-all: build deploy
+all: update dep build deploy
+
+update:
+	git pull origin master
+
+dep:
+	npm install
 
 deploy:
 	docker-compose -f deploy/docker-compose.yml up -d
