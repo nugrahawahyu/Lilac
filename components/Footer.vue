@@ -2,8 +2,7 @@
   <footer class="footer">
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--12-col">
-        Website by
-        <a href="https://twitter.com/wahyucnugraha" target="_blank">Wahyu Nugraha</a>
+        Find me on
       </div>
       <div class="mdl-cell mdl-cell--12-col" style="margin-top: 0;">
         <ul class="social-collection social-collection">
@@ -35,6 +34,7 @@
 }
 
 .social-collection {
+  padding: 0;
   margin: 0;
   list-style: none;
 
@@ -45,7 +45,10 @@
   li {
     font-size: 1rem;
     display: inline-block;
-    margin-right: 24px;
+
+    &:not(:first-child) {
+      margin-left: 24px;
+    }
   }
 }
 </style>

@@ -99,4 +99,14 @@ h2 {
   background-color: #000;
   color: #fff;
 }
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 </style>
