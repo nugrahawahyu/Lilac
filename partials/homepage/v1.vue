@@ -13,17 +13,6 @@
     </section>
     <section class="section">
       <div class="content content--narrow">
-        <h2>Tweets</h2>
-        <no-ssr>
-          <div>
-            <a href="https://twitter.com/wahyucnugraha?ref_src=twsrc%5Etfw"
-              class="twitter-follow-button"
-              data-show-count="false">
-              Follow @wahyucnugraha
-            </a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-        </no-ssr>
         <no-ssr>
           <div>
             <a class="twitter-timeline"
