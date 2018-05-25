@@ -11,7 +11,7 @@
         </parallax>
       </div>
     </section>
-    <section class="section">
+    <!-- <section class="section">
       <div class="content content--narrow">
         <no-ssr>
           <div>
@@ -24,7 +24,7 @@
           </div>
         </no-ssr>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
