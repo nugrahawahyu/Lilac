@@ -76,7 +76,7 @@ h2 {
   }
 
   &--full-height {
-    height: 80vh;
+    height: calc(100vh - 64px);
   }
 }
 
