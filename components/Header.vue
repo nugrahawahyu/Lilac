@@ -3,8 +3,8 @@
     <header class="mdl-layout__header" style="display: flex !important; background: #000;">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">nugraha&middot;</span>
-        <strong style="font-weight: 1000; margin-left: 0px;" class="mdl-layout-title">notes</strong>
+        <!-- <span class="mdl-layout-title">nugraha&middot;</span>
+        <strong style="font-weight: 1000; margin-left: 0px;" class="mdl-layout-title">notes</strong> -->
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation. We hide it in small screens. -->
