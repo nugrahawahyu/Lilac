@@ -1,4 +1,4 @@
-FROM node
+FROM node:9.10.0
 
 COPY / /app/
 
@@ -9,6 +9,6 @@ RUN npm install --production --unsafe-perm || \
       cat npm-debug.log; \
     fi) && false)
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD /usr/local/bin/npm start

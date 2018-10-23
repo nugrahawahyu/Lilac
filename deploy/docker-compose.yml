@@ -1,35 +1,16 @@
 version: '3'
 
 services:
-
-  web-ui:
-    image: nugraha/myblog/web:latest
+  lilac:
+    image: iredium/lilac/web:latest
     restart: on-failure
     logging:
       driver: "json-file"
       options:
         max-size: "999k"
-    ports:
-      - "3000:3000"
     networks:
-      - frontend
-
-  nginx:
-    image: nugraha/myblog/nginx:latest
-    restart: on-failure
-    volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "999k"
-    command: wait-for-it -t 0 web-ui:3000 -- nginx -g 'daemon off;'
-    ports:
-      - "80:80"
-      - "443:443"
-    networks:
-      - frontend
+      - iredium_services
 
 networks:
-  frontend:
-
+  iredium_services:
+    external: true

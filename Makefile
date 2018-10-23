@@ -1,8 +1,8 @@
 .PHONY: build deploy
 
-PROJECT   = myblog
+REGISTRY  = iredium
+PROJECT   = lilac
 VERSION   = latest
-REGISTRY  = nugraha
 DDIR      = deploy
 ODIR      = $(DDIR)/_output
 DIRS      = $(shell cd deploy && ls -d */ | grep -v "_")
@@ -18,14 +18,17 @@ $(ODIR):
 
 all: update dep build deploy
 
-update:
-	git pull origin master
-
 dep:
 	npm install
 
+dev:
+	docker-compose up --force-recreate
+
 deploy:
-	docker-compose -f deploy/docker-compose.yml up -d
+	docker-compose -f deploy/docker-compose.yml --project-name "$(PROJECT)" up -d
+
+update:
+	git pull origin master
 
 build:
 	npm run build
