@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-header></v-header>
+    <!-- <v-header></v-header> -->
     <nuxt/>
     <!-- <my-footer/> -->
   </div>

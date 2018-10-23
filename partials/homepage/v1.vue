@@ -2,13 +2,19 @@
   <div class="page-container">
     <section class="dark-section">
       <div class="content content--full-height" style="padding: 0;">
-        <parallax img-src="images/banner.jpg" style="position: relative;">
-          <div style="position: absolute; background-color: rgba(255,255,255,0.5); top: 0; bottom: 0; left: 0; right: 0; z-index: 1;">
-            <div class="header-content content content--narrow">
-              <h1 class="title"><span style="font-weight: 800;">Hi</span>, you found me</h1>
-            </div>
+        <div class="header-content content content--narrow">
+          <h1 class="title"><span style="font-weight: 800;">Hi</span>, you found me</h1>
+          <div class="mdl-cell mdl-cell--12-col">
+            <ul class="social-collection social-collection">
+              <li>
+                <a target="_blank" href="https://github.com/nugrahawahyu"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/wahyucnugraha"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
           </div>
-        </parallax>
+        </div>
       </div>
     </section>
     <!-- <section class="section">
@@ -80,10 +86,6 @@ h2 {
   }
 }
 
-.mystic-section {
-  background-color: #e6ecf0;
-}
-
 .dark-section {
   background-color: #000;
   color: #fff;
@@ -96,6 +98,19 @@ h2 {
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+.social-collection {
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 32px;
+
+    a {
+      color: #fff;
+    }
   }
 }
 </style>
